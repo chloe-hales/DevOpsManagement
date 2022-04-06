@@ -22,7 +22,8 @@ jobs:
         value: ${{ parameters.resourcePrefix }}stor
         #$(env)
       - name: functionName
-        value: ${{ parameters.resourcePrefix }}function-$(env)
+        value: ${{ parameters.resourcePrefix }}function
+        #-$(env)
       - name: vmImageName
         value: 'ubuntu-latest'
     pool:
