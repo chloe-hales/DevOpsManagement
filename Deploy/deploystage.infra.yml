@@ -17,7 +17,8 @@ jobs:
       - name: appInsights
         value: ${{ parameters.resourcePrefix }}ai-$(env)
       - name: kvName
-        value: ${{ parameters.resourcePrefix }}-$(env)
+        value: ${{ parameters.resourcePrefix }}kv
+        #-$(env)
       - name: storageName
         value: ${{ parameters.resourcePrefix }}stor
         #$(env)
