@@ -17,14 +17,11 @@ jobs:
       - name: appInsights
         value: ${{ parameters.resourcePrefix }}ai-$(env)
       - name: kvName
-        value: ${{ parameters.resourcePrefix }}kv
-        #-$(env)
+        value: ${{ parameters.resourcePrefix }}kv-$(env)
       - name: storageName
-        value: ${{ parameters.resourcePrefix }}stor
-        #$(env)
+        value: ${{ parameters.resourcePrefix }}stor(env)
       - name: functionName
-        value: ${{ parameters.resourcePrefix }}function
-        #-$(env)
+        value: ${{ parameters.resourcePrefix }}function-$(env)
       - name: vmImageName
         value: 'ubuntu-latest'
     pool:
