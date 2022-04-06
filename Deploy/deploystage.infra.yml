@@ -19,7 +19,8 @@ jobs:
       - name: kvName
         value: ${{ parameters.resourcePrefix }}-$(env)
       - name: storageName
-        value: ${{ parameters.resourcePrefix }}stor$(env)
+        value: ${{ parameters.resourcePrefix }}stor
+        #$(env)
       - name: functionName
         value: ${{ parameters.resourcePrefix }}function-$(env)
       - name: vmImageName

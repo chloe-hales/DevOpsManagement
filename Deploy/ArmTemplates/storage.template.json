@@ -3,8 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "storageAccounts_name": {
-      "type": "String", 
-      "defaultValue": "cphst"
+      "type": "String"
     }
   },
   "variables": {},
